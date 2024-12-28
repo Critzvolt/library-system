@@ -2,6 +2,7 @@
 <table class="table table-success table-striped">
     <thead>
         <tr>
+            <th> Book ID </th>
             <th> Name </th>
             <th> Author </th>
             <th> Genre </th>
@@ -11,6 +12,7 @@
     </thead>
     <tbody>
         <tr *ngFor="let book of books">
+            <td> {{ book.bookId }} </td>
             <td> {{ book.bookName }} </td>
             <td> {{ book.bookAuthor }} </td>
             <td> {{ book.bookGenre }} </td>
